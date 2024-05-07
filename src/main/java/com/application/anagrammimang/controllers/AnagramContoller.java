@@ -22,6 +22,11 @@ public class AnagramContoller {
         return anagramService.getAnagram(difficulty);
     }
 
+    @GetMapping("/test")
+    public String test() {
+        return "it works";
+    }
+
     @PostMapping("/input")
     public ResponseEntity<Boolean> handleInput(@RequestBody InputDTO input) {
         boolean isCorrect = anagramService.handleInput(input);
