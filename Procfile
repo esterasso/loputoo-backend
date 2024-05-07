@@ -1,1 +1,1 @@
-web: java $JAVA_OPTS -cp target/classes:target/dependency/* anagrammimang.BackendApplication
+web: java -Dserver.port=$PORT -jar target/anagrammimang-0.0.1-SNAPSHOT.jar

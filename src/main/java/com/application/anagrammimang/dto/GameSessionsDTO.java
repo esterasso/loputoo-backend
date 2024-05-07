@@ -1,4 +1,4 @@
-package com.anagrammimang.dto;
+package com.application.anagrammimang.dto;
 
 
 import lombok.Data;

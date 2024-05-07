@@ -1,8 +1,8 @@
-package com.anagrammimang.controllers;
+package com.application.anagrammimang.controllers;
 
-import com.anagrammimang.dto.InputDTO;
-import com.anagrammimang.model.Anagrams;
-import com.anagrammimang.service.AnagramService;
+import com.application.anagrammimang.dto.InputDTO;
+import com.application.anagrammimang.model.Anagrams;
+import com.application.anagrammimang.service.AnagramService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

@@ -1,4 +1,4 @@
-package com.anagrammimang.model;
+package com.application.anagrammimang.model;
 
 import lombok.Data;
 import jakarta.persistence.*;

@@ -1,9 +1,9 @@
-package com.anagrammimang.service;
+package com.application.anagrammimang.service;
 
-import com.anagrammimang.model.GameSessions;
+import com.application.anagrammimang.model.GameSessions;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import com.anagrammimang.repository.GameSessionsRepository;
+import com.application.anagrammimang.repository.GameSessionsRepository;
 
 import java.util.List;
 

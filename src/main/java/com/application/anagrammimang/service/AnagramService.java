@@ -1,7 +1,7 @@
-package com.anagrammimang.service;
+package com.application.anagrammimang.service;
 
-import com.anagrammimang.dto.InputDTO;
-import com.anagrammimang.model.Anagrams;
+import com.application.anagrammimang.dto.InputDTO;
+import com.application.anagrammimang.model.Anagrams;
 
 import java.util.List;
 

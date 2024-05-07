@@ -1,7 +1,7 @@
-package com.anagrammimang.controllers;
+package com.application.anagrammimang.controllers;
 
-import com.anagrammimang.model.GameSessions;
-import com.anagrammimang.service.UserService;
+import com.application.anagrammimang.model.GameSessions;
+import com.application.anagrammimang.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

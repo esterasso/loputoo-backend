@@ -1,6 +1,6 @@
-package com.anagrammimang.service;
+package com.application.anagrammimang.service;
 
-import com.anagrammimang.model.GameSessions;
+import com.application.anagrammimang.model.GameSessions;
 
 import java.util.List;
 

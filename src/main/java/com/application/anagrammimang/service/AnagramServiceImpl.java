@@ -1,13 +1,13 @@
-package com.anagrammimang.service;
+package com.application.anagrammimang.service;
 
-import com.anagrammimang.dto.InputDTO;
-import com.anagrammimang.model.AnagramKeys;
-import com.anagrammimang.model.Anagrams;
-import com.anagrammimang.repository.AnagramKeyRepository;
-import com.anagrammimang.repository.WordRepository;
+import com.application.anagrammimang.dto.InputDTO;
+import com.application.anagrammimang.model.AnagramKeys;
+import com.application.anagrammimang.model.Anagrams;
+import com.application.anagrammimang.repository.AnagramKeyRepository;
+import com.application.anagrammimang.repository.WordRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import com.anagrammimang.repository.AnagramRepository;
+import com.application.anagrammimang.repository.AnagramRepository;
 
 import java.util.*;
 

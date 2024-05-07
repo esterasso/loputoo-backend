@@ -1,4 +1,4 @@
-package com.anagrammimang.model;
+package com.application.anagrammimang.model;
 
 import jakarta.persistence.*;
 

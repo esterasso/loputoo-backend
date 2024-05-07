@@ -1,6 +1,6 @@
-package com.anagrammimang.repository;
+package com.application.anagrammimang.repository;
 
-import com.anagrammimang.model.AnagramKeys;
+import com.application.anagrammimang.model.AnagramKeys;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

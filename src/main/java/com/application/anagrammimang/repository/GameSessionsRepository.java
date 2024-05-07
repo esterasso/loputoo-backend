@@ -1,6 +1,6 @@
-package com.anagrammimang.repository;
+package com.application.anagrammimang.repository;
 
-import com.anagrammimang.model.GameSessions;
+import com.application.anagrammimang.model.GameSessions;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
