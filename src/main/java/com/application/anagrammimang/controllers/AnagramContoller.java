@@ -8,7 +8,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@CrossOrigin(origins = {"http://localhost:3000"})
+@CrossOrigin(origins = {"https://anagrammimang-8d5b0c7ce58d.herokuapp.com"})
 public class AnagramContoller {
 
     private final AnagramService anagramService;
