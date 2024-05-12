@@ -29,7 +29,7 @@ public class AnagramServiceImpl implements AnagramService {
         List<AnagramKeys> qualifyingKeys;
 
         if (Objects.equals(difficulty, "kerge")) {
-            qualifyingKeys = anagramKeyRepository.findByOneAnagramCountGreaterThanEqualAndTwoAnagramCountGreaterThanEqual(2, 10);
+            qualifyingKeys = anagramKeyRepository.findByOneAnagramCountGreaterThanEqualAndTwoAnagramCountGreaterThanEqual(2, 5);
             int totalAnagrams = qualifyingKeys.size();
             int randomIndex = random.nextInt(totalAnagrams);
 
