@@ -22,6 +22,7 @@ public class AnagramContoller {
         return anagramService.getAnagram(difficulty);
     }
 
+    // publitseerimise testimiseks kasutatud
     @GetMapping("/test")
     public String test() {
         return "it works";

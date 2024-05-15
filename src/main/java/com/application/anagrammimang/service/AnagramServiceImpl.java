@@ -28,6 +28,7 @@ public class AnagramServiceImpl implements AnagramService {
         Random random = new Random();
         List<AnagramKeys> qualifyingKeys;
 
+        // kontrollitakse, et kerge raskustaseme puhul antaks mängijale anagrammi, millel on vähemalt 2 ühesõnalist ning 10 kahesõnalist anagrammi
         if (Objects.equals(difficulty, "kerge")) {
             qualifyingKeys = anagramKeyRepository.findByOneAnagramCountGreaterThanEqualAndTwoAnagramCountGreaterThanEqual(2, 5);
             int totalAnagrams = qualifyingKeys.size();
@@ -39,10 +40,12 @@ public class AnagramServiceImpl implements AnagramService {
             System.out.println(randomAnagram.getAnagram());
             return randomAnagram;
         } else {
+            // raske raskustaseme puhul kontrollitakse, et ette antaval sõnal oleks vähemalt 1 ühesõnaline ja 5 kahesõnalist
             qualifyingKeys = anagramKeyRepository.findByOneAnagramCountLessThanEqualAndTwoAnagramCountGreaterThanEqual(1, 5);
             int totalAnagrams = qualifyingKeys.size();
             int randomIndex = random.nextInt(totalAnagrams);
 
+            // lõpuks valitakse suvaline tingimusi täitnud sõna anagram key järgi
             AnagramKeys anagramkey = qualifyingKeys.get(randomIndex);
             System.out.println(anagramkey.getOneAnagramCount() + " " + anagramkey.getTwoAnagramCount());
 
@@ -69,17 +72,21 @@ public class AnagramServiceImpl implements AnagramService {
 
     public boolean handleInput(InputDTO input) {
 
+        // esiteks kontrollitakse ega mängija ei sisestanud sama sõna, mis ette anti
         if (input.getAnagramValue().equals(input.getInputValue())) return false;
 
         String[] words = input.getInputValue().split("\\s+");
 
+        // nii mängijale ette antud sõna kui ka mängija sisestatud sõna(de) tähed sorteeritakse tähestikuliselt ehk luuakse anagram key
         String mergedWords = mergeWords(input.getInputValue());
         String sortedInput = sortCharacters(mergedWords);
         String sortedWord = sortCharacters(input.getAnagramValue());
 
+        // printimised on vahepealseks testimiseks
         System.out.println(sortedInput);
         System.out.println(sortedWord);
 
+        // hakatakse kontrollima kas loodud sõna(d) on eestikeelsed tähenduslikud sõnad
         boolean isAWord = false;
 
         if (words.length == 2) {
